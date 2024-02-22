@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ejve
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0031-tenant/tkrw-pr712-0075-0031-app/devfile-sample-ejve@sha256:a5a0be6f4c25d09f8b1d69e2e40bc22c6981f961f3e8787c9bd6f8dbdd0ce459
+        name: my-nodejs
+        resources: {}
+status: {}
